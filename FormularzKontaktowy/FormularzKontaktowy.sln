@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularzKontaktowy", "Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cwiczenie", "Cwiczenie\Cwiczenie.csproj", "{7DA58C7C-8471-4DAA-897E-CEB0299F3156}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adres", "Adres\Adres.csproj", "{525F5440-81E6-498F-A954-E6E2BED0DD5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7DA58C7C-8471-4DAA-897E-CEB0299F3156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DA58C7C-8471-4DAA-897E-CEB0299F3156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DA58C7C-8471-4DAA-897E-CEB0299F3156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525F5440-81E6-498F-A954-E6E2BED0DD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525F5440-81E6-498F-A954-E6E2BED0DD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525F5440-81E6-498F-A954-E6E2BED0DD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525F5440-81E6-498F-A954-E6E2BED0DD5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
