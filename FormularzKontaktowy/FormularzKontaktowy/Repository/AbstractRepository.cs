@@ -42,8 +42,13 @@ namespace FormularzKontaktowy.Repository
         {
             using (var context = new Models.AppContext())
             {
-                context.Entry(entity).State = EntityState.Detached;
+                if (context.Entry(entity).State == EntityState.Detached)
+                {
+                    context.Set<T>().Attach(entity);
+                }
                 context.Set<T>().Remove(entity);
+                context.SaveChanges();
+
             }
         }
     }
