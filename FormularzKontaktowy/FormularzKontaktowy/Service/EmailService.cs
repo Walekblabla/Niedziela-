@@ -7,7 +7,7 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Web;
 
-namespace FormularzKontaktowy.Service
+namespace Cwiczenie.Service
 {
     public class EmailService
     {

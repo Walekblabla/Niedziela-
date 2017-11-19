@@ -156,13 +156,22 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarListController.cs" />
+    <Compile Include="Controllers\FormListController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AppContext.cs" />
+    <Compile Include="Models\CarList.cs" />
     <Compile Include="Models\FormList.cs" />
+    <Compile Include="Models\HomeList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AbstractRepository.cs" />
+    <Compile Include="Repository\CarListRepository.cs" />
+    <Compile Include="Repository\FormListRepository.cs" />
+    <Compile Include="Repository\HomeListRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -204,6 +213,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\FormList\Create.cshtml" />
+    <Content Include="Views\FormList\Delete.cshtml" />
+    <Content Include="Views\FormList\Details.cshtml" />
+    <Content Include="Views\FormList\Edit.cshtml" />
+    <Content Include="Views\FormList\Index.cshtml" />
+    <Content Include="Views\CarList\Create.cshtml" />
+    <Content Include="Views\CarList\Delete.cshtml" />
+    <Content Include="Views\CarList\Details.cshtml" />
+    <Content Include="Views\CarList\Edit.cshtml" />
+    <Content Include="Views\CarList\Index.cshtml" />
+    <Content Include="Views\HomeList\Create.cshtml" />
+    <Content Include="Views\HomeList\Delete.cshtml" />
+    <Content Include="Views\HomeList\Details.cshtml" />
+    <Content Include="Views\HomeList\Edit.cshtml" />
+    <Content Include="Views\HomeList\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

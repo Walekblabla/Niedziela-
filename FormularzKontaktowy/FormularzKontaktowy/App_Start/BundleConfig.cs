@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace FormularzKontaktowy
+namespace Cwiczenie
 {
     public class BundleConfig
     {

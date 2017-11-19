@@ -6,11 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using FormularzKontaktowy.Models;
-using FormularzKontaktowy.Service;
-using FormularzKontaktowy.Repository;
+using Cwiczenie.Models;
+using Cwiczenie.Service;
+using Cwiczenie.Repository;
 
-namespace FormularzKontaktowy.Controllers
+namespace Cwiczenie.Controllers
 {
     public class ContactFormController : Controller
     {

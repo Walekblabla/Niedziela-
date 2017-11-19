@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IdentityModel.Metadata;
 using System.Linq;
-using System.Web;
 
 using System.Data.Entity;
 using System.Linq.Expressions;
-using Microsoft.Ajax.Utilities;
-using System.Data.Entity.Core.Common.CommandTrees;
+using System.Reflection;
 
 namespace Cwiczenie.Repository
 {
@@ -15,7 +12,7 @@ namespace Cwiczenie.Repository
     {
         public virtual void Create(T entity)
         {
-            using (var context = new Models.AppContext())
+            using (var context = new Cwiczenie.Models.AppContext())
             {
                 context.Set<T>().Add(entity);
                 context.SaveChanges();
@@ -23,7 +20,7 @@ namespace Cwiczenie.Repository
         }
         public virtual void Update(T entity)
         {
-            using (var context = new Models.AppContext())
+            using (var context = new Cwiczenie.Models.AppContext())
             {
                 context.Entry(entity).State = EntityState.Modified;
                 context.SaveChanges();
@@ -31,7 +28,7 @@ namespace Cwiczenie.Repository
         }
         public virtual List<T> GetWhere(Expression<Func<T, bool>> expression)
         {
-            using (var context = new Models.AppContext())
+            using (var context = new Cwiczenie.Models.AppContext())
             {
                 var query = context.Set<T>().Where(expression);
                 return query.ToList();
@@ -40,7 +37,7 @@ namespace Cwiczenie.Repository
         }
         public virtual void Delete(T entity)
         {
-            using (var context = new Models.AppContext())
+            using (var context = new Cwiczenie.Models.AppContext())
             {
                 if (context.Entry(entity).State == EntityState.Detached)
                 {

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace FormularzKontaktowy.Models
+namespace Cwiczenie.Models
 {
     public class ContactForm
     {
