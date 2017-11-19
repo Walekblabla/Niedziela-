@@ -76,8 +76,22 @@ namespace Cwiczenie.Controllers
             }
             return View(formList);
         }
+        // POST: CarList/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "Id,Name,Surname")] FormList formList)
+        {
+            if (ModelState.IsValid)
+            {
+                
+                
+                return RedirectToAction("Index");
+            }
+            return View(formList);
+        }
 
-      
 
         // GET: FormList/Delete/5
         public ActionResult Delete(int? id)
